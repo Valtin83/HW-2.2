@@ -56,7 +56,7 @@ public class Main {
         int weighingWhitePaint = classes * whitePaint;
         int weighingBrownPaint = classes * brownPaint;
         System.out.println("В школе, где " + classes + " классов, нужно " + weighingWhitePaint + " банок белой краски и " + weighingBrownPaint + " банок коричневой краски.");
-//         Задача №6
+//        Задача №6
         byte bananas = 5;
         byte weight1Banana = 80;
         int weightBananas = bananas * weight1Banana;
@@ -72,12 +72,41 @@ public class Main {
         byte weightEgg_1 = 70;
         int weightEggs = eggs * weightEgg_1;
         int weight_g = weightBananas + weightMilk + weightIceCream + weightEggs;
-        float weight_kg = (float) weight_g / 1000;
+        short kgGr = 1000;
+        float weight_kg = (float) weight_g / kgGr;
         System.out.println(weight_g + " гр.");
         System.out.println(weight_kg + " кг.");
-        // Задача №7
-
-
+//        Задача №7
+        byte loseWeight = 7;
+        short weightDay1 = 250;
+        short weightDay2 = 500;
+        float weightDay1Kg = (float) weightDay1 / kgGr;
+        float weightDay2Kg = (float) weightDay2 / kgGr;
+        int day1 = (int) (loseWeight / weightDay1Kg);
+        int day2 = (int) (loseWeight / weightDay2Kg);
+        System.out.println("По 250 гр.в день приведёт к результату за " + day1 + "  дней.");
+        System.out.println("По 500 гр.в день приведёт к результату за " + day2 + " дней.");
+//        Задача №8
+        int wagesMasha = 67_760;
+        int wagesDen = 83_690;
+        int wagesKristina = 76_230;
+        float percent10 = 0.1F;
+        byte year = 12;
+        int annualIncomeMasha = wagesMasha * year;
+        int annualIncomeDen = wagesDen * year;
+        int annualIncomeKristina = wagesKristina * year;
+        int increasedWagesMasha = (int) (wagesMasha * percent10 + wagesMasha);
+        int increasedWagesDen = (int) (wagesDen * percent10 + wagesDen);
+        int increasedWagesKristina = (int) (wagesKristina * percent10 + wagesKristina);
+        int increasedAnnualIncomeMasha = increasedWagesMasha * year;
+        int increasedAnnualIncomeDen = increasedWagesDen * year;
+        int increasedAnnualIncomeKristina = increasedWagesKristina * year;
+        int differenceMasha = increasedAnnualIncomeMasha % annualIncomeMasha;
+        int differenceDen = increasedAnnualIncomeDen % annualIncomeDen;
+        int differenceKristina = increasedAnnualIncomeKristina % annualIncomeKristina;
+        System.out.println("Маша теперь получает " + increasedWagesMasha + " рублей. Годовой доход вырос на " + differenceMasha + " рублей.");
+        System.out.println("Денис теперь получает " + increasedWagesDen + " рублей. Годовой доход вырос на " + differenceDen + " рублей.");
+        System.out.println("Кристина теперь получает " + increasedWagesKristina + " рублей. Годовой доход вырос на " + differenceKristina + " рублей.");
 
     }
 }
