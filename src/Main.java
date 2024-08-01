@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-//        Задача №1
+        System.out.println("Задача №1");
         int mouse = 4_766_809;
         byte cat = 67;
         short air = 1500;
@@ -13,7 +13,8 @@ public class Main {
         System.out.println("Значение переменной bottom типом long равно " + bottom);
         System.out.println("Значение переменной ship типом float равно " + ship);
         System.out.println("Значение переменной twin типом double равно " + twin);
-//        Задача №2
+
+        System.out.println("Задача №2");
         float a = 27.12f;
         long b = 987_678_965_549L;
         float d = 2.786f;
@@ -21,7 +22,8 @@ public class Main {
         short e = -159;
         short g = 27897;
         byte h = 67;
-//        Задача №3
+
+        System.out.println("Задача №3");
         byte studentsLP = 23;
         byte studentsAS = 27;
         byte studentsEA = 30;
@@ -29,7 +31,8 @@ public class Main {
         short paper = 480;
         int paperStudent = paper / sumStudent;
         System.out.println("На каждого ученика рассчитано " + paperStudent + " листов бумаги.");
-//        Задача №4
+
+        System.out.println("Задача №4");
         byte bottle = 16;
         byte time = 2;
         int oneMinuteBottle = bottle / time;
@@ -47,7 +50,8 @@ public class Main {
         System.out.println("За сутки машина произвела " + efficiencyDay + " штук бутылок");
         System.out.println("За 3 дня машина произвела " + efficiency3Day + " штук бутылок");
         System.out.println("За месяц машина произвела " + efficiencyMonth + " штук бутылок");
-//        Задача №5
+
+        System.out.println("Задача №5");
         byte paint = 120;
         byte whitePaint = 2;
         byte brownPaint = 4;
@@ -56,7 +60,8 @@ public class Main {
         int weighingWhitePaint = classes * whitePaint;
         int weighingBrownPaint = classes * brownPaint;
         System.out.println("В школе, где " + classes + " классов, нужно " + weighingWhitePaint + " банок белой краски и " + weighingBrownPaint + " банок коричневой краски.");
-//        Задача №6
+
+        System.out.println("Задача №6");
         byte bananas = 5;
         byte weight1Banana = 80;
         int weightBananas = bananas * weight1Banana;
@@ -76,7 +81,8 @@ public class Main {
         float weight_kg = (float) weight_g / kgGr;
         System.out.println(weight_g + " гр.");
         System.out.println(weight_kg + " кг.");
-//        Задача №7
+
+        System.out.println("Задача №7");
         byte loseWeight = 7;
         short weightDay1 = 250;
         short weightDay2 = 500;
@@ -86,7 +92,8 @@ public class Main {
         int day2 = (int) (loseWeight / weightDay2Kg);
         System.out.println("По 250 гр.в день приведёт к результату за " + day1 + "  дней.");
         System.out.println("По 500 гр.в день приведёт к результату за " + day2 + " дней.");
-//        Задача №8
+
+        System.out.println("Задача №8");
         int wagesMasha = 67_760;
         int wagesDen = 83_690;
         int wagesKristina = 76_230;
