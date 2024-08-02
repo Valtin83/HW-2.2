@@ -108,9 +108,9 @@ public class Main {
         int increasedAnnualIncomeMasha = increasedWagesMasha * year;
         int increasedAnnualIncomeDen = increasedWagesDen * year;
         int increasedAnnualIncomeKristina = increasedWagesKristina * year;
-        int differenceMasha = increasedAnnualIncomeMasha % annualIncomeMasha;
-        int differenceDen = increasedAnnualIncomeDen % annualIncomeDen;
-        int differenceKristina = increasedAnnualIncomeKristina % annualIncomeKristina;
+        int differenceMasha = increasedAnnualIncomeMasha - annualIncomeMasha;
+        int differenceDen = increasedAnnualIncomeDen - annualIncomeDen;
+        int differenceKristina = increasedAnnualIncomeKristina - annualIncomeKristina;
         System.out.println("Маша теперь получает " + increasedWagesMasha + " рублей. Годовой доход вырос на " + differenceMasha + " рублей.");
         System.out.println("Денис теперь получает " + increasedWagesDen + " рублей. Годовой доход вырос на " + differenceDen + " рублей.");
         System.out.println("Кристина теперь получает " + increasedWagesKristina + " рублей. Годовой доход вырос на " + differenceKristina + " рублей.");
